@@ -1,7 +1,7 @@
 type = "webpack"
-name = "drive"
-workers_dev = true
+name = "aosip-downloads"
+route = "https://get.aosip.dev/*"
 webpack_config = "webpack.config.js"
 kv_namespaces = [
-    { binding = "sa", id = "2f04ca2b5bb944e5997f8bae694902ff" }
+    { binding = "sa", id = "7fcf91c70e3b408cbba7d42a6903272c" }
 ]
