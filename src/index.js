@@ -180,7 +180,8 @@ async function handleRequest(request) {
 		if (filecount == 0) fileht = "";
 		if (path != "/") {
 			fileht = `← <a href="${parent}">Parent Directory</a><br>` + fileht;
-			title = `${properties.folder_title} ${path}`;
+                        title = `${self.props.folder_title} ${path.replace(/\//g, '')}`
+
 		}
 		const ht = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 		<html>
