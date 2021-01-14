@@ -112,7 +112,7 @@ async function handleRequest(request) {
     if (foldercount == 0) folderht = "";
     if (path != '/') {
       folderht = `← <a href="${parent}">Parent Directory</a><br>` + folderht
-      title = `${self.props.folder_title} ${path}`
+      title = `${self.props.folder_title} ${path.replace(/\//g, '')}`
     }
     const ht = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <html>
